@@ -3007,7 +3007,7 @@
       "patterns": [
         {
           "applyEndPatternLast": 1,
-          "begin": "\\s*+((::|-)?(if|expr|while))\\b\\s+(?={)",
+          "begin": "\\s*+((::|-)?(if|expr|while))\\b(?:\\s*\\((?:[^()\\s]*)\\))?\\s*(?={)",
           "end": "(?<=})",
           "beginCaptures": {
             "1": {
